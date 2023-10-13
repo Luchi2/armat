@@ -1,0 +1,261 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-size: 15px;
+    font-family: 'Luckiest Guy', cursive;
+}
+
+body{
+    background: linear-gradient(357deg, #030237, #0b5f95);
+}
+
+a{
+    text-decoration: none;
+}
+
+footer{
+        background: black;
+    color: white;
+    height: 5vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: fangsong;
+    margin-block-start: 10vh;
+}
+
+/* width */
+::-webkit-scrollbar {
+  width: 3px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #c3c5ff;
+}
+ 
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #060462;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #512bb9;
+}
+
+
+.header{background: #001c623b;grid-template-columns: 1fr 5%;justify-items: center;align-items: center;height: 10vh;width: 100%;}
+
+.header, .home, .container__profile, .contain__profile, .obtener {
+    display: grid;
+}
+
+.header__img{
+    width: 4.5vw;
+}
+.header__menu{
+    display: flex;
+    gap: 5vw;
+}
+.menu__btn{
+    color: white;
+    letter-spacing: 1.5px;
+}
+.home{
+    grid-template-columns: 1fr 51%;
+    height: 95vh;
+    gap: 5vw;
+    justify-items: center;
+    align-items: center;
+}
+
+.home img {
+    width: 100%;
+    align-self: end;
+}
+.container__obj{
+    text-align: center;
+    width: 35vw;
+    height: 65vh;
+}
+
+.container__obj p {
+    text-align: justify;
+    font-family: math;
+    font-weight: 900;
+    font-size: 20px;
+    color: #c3c5ff;
+}
+
+.container__obj h2 {
+    font-family: cursive;
+    font-size: 23px;
+    margin-block-end: 2vh;
+    color: #ff5d86;
+    text-shadow: 0 0 2px #060462;
+}
+
+.container__obj h1 {
+    font-size: 51px;
+    letter-spacing: 6px;
+    color: #686cff;
+    text-shadow: 5px 2px 0px black;
+}
+.aboutus{
+    text-align: center;
+    margin-bottom: 5vh;
+    height: 95vh;
+    display: grid;
+}
+
+.aboutus h3, .container__obtener h3 {
+    font-size: 37px;
+    margin-block-end: 2vh;
+    color: #e9bb57;
+}
+
+.aboutus p {
+    font-family: math;
+    font-weight: 900;
+    color: #a8a9db;
+    margin-inline: 10vw;
+    font-size: 1.2em;
+}
+.container__profile{
+    grid-template-columns: repeat(5, minmax(0,1fr));
+    width: 80vw;
+    margin: 0 auto;
+    gap:3vw;
+}
+.contain__profile{
+    height: 40vh;
+    position: relative;
+}
+
+.contain__profile span {
+    color: #ff5f87;
+}
+
+.contain__profile em {
+    color: #5fbcff;
+    font-family: ui-serif;
+}
+
+.foto{
+    width: 100%;
+    border-radius: 50%;
+    height: 30vh;
+    object-fit: cover;
+}
+.carrera {
+    position: absolute;
+    width: 3vw;
+    bottom: 10vh;
+    right: 0;
+}
+.isic {
+    border-radius: 50%;
+    bottom: 11vh;
+}
+.obtener{
+    grid-template-columns: 35% 1fr;
+    gap: 5vw;
+    width: 80vw;
+    margin: 0 auto;
+}
+
+.obtener img {
+    width: 100%;
+}
+
+.obtener__img{
+    box-shadow: 0px 6px 7px 2px #fcfcff1f;
+    border-radius: 5px;
+    height: 80vh;
+    object-fit: contain;
+    width: auto !important;
+    margin: 0 auto;
+}
+.container__obtener{
+    justify-items: center;
+    justify-self: center;
+    text-align: center;
+    align-self: center;
+}
+
+.container__obtener li{
+    color: white;
+    font-size: 21px;
+    text-align: start;
+}
+
+.container__obtener img {
+    width: 20vw;
+}
+
+
+.boton{
+    background: #00aaff;
+       box-shadow: 3px 4px 5px 0px #2c86ff, inset 3px 3px 5px 0px #2c86ff, inset 1px -1px 5px 0px #4248e3;
+    color: white;
+    width: 40vw;
+    height: 5vh;
+    border-radius: 40px;
+    display: grid;
+    text-align: center;
+    align-items: center;
+    margin: 0 auto 2vh;
+    font-size: 1.6em;
+}
+
+@media only screen and (max-width: 600px) {
+    *{
+    }
+    
+    .obtener__img {
+    width:80vw !important;}
+    .header{
+        grid-template-columns: 1fr;
+    }
+    .header__img{
+        width: 20vw;
+    }
+    .header__menu{
+        display: none;
+    }
+    .container__obj{
+            position: absolute;
+    width: 80vw;
+    height: auto;
+    }
+
+    .home{
+        position: relative;
+    }
+    .contain__profile {
+    width: 60vw;
+    }
+    .carrera {
+    position: absolute;
+    width: 15vw;
+    }
+    .container__profile {
+    grid-template-columns: repeat(1, minmax(0,1fr));
+    justify-items: center;
+    }
+    .aboutus{
+        height: auto;
+    }
+    .foto{
+        width: 30vh;
+    }
+    .contain__profile{
+            justify-items: center;
+    }
+    .obtener {
+    grid-template-columns:  1fr;
+}
+
+
+}

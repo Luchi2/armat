@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<QCARConfig>
+  <Tracking>
+    <ImageTarget name="four" size="1.000000 0.596433" />
+    <ImageTarget name="five" size="1.000000 1.136574" />
+    <ImageTarget name="bloqueOne" size="0.500000 0.652993" />
+    <ImageTarget name="bloqueTwo" size="0.500000 0.688235" />
+    <ImageTarget name="bloqueThree" size="0.500000 0.675991" />
+    <ImageTarget name="three" size="0.500000 0.500000" />
+    <ImageTarget name="two" size="0.500000 0.274167" />
+    <ImageTarget name="one" size="0.500000 0.500000" />
+  </Tracking>
+</QCARConfig>
