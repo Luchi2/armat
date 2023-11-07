@@ -47,7 +47,7 @@ footer{
 
 .header{background: #001c623b;grid-template-columns: 1fr 5%;justify-items: center;align-items: center;height: 10vh;width: 100%;}
 
-.header, .home, .container__profile, .contain__profile, .obtener {
+.header, .home, .container__profile, .contain__profile, .obtener, .container__install {
     display: grid;
 }
 
@@ -109,13 +109,21 @@ footer{
     display: grid;
 }
 
-.aboutus h3, .container__obtener h3 {
+.install{
+    text-align: center;
+    margin-bottom: 5vh;
+    height: auto;
+    display: grid;
+}
+
+
+.aboutus h3, .container__obtener h3, .install h3{
     font-size: 37px;
     margin-block-end: 2vh;
     color: #e9bb57;
 }
 
-.aboutus p {
+.aboutus p, .install p{
     font-family: math;
     font-weight: 900;
     color: #a8a9db;
@@ -127,6 +135,16 @@ footer{
     width: 80vw;
     margin: 0 auto;
     gap:3vw;
+}
+.container__install{
+    grid-template-columns: repeat(4, minmax(0,1fr));
+    width: 80vw;
+    margin: 0 auto;
+    gap:3vw;
+}
+
+.container__install img {
+    width: 100%;
 }
 .contain__profile{
     height: 40vh;
@@ -164,6 +182,8 @@ footer{
     width: 80vw;
     margin: 0 auto;
 }
+
+
 
 .obtener img {
     width: 100%;
